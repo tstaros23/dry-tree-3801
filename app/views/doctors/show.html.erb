@@ -4,5 +4,8 @@
 <%= @doctor.hospital.name %>
 
 <% @doctor.patients.each do |patient| %>
-  <%= patient.name %>
+  <div id="patient-<%= patient.id %>">
+      <%= patient.name %>
+      <%= button_to "Delete", "/doctors/#{@doctor.id}/patients/#{patient.id}", method: :delete %>
+  </div>
 <% end %>
