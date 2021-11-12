@@ -1,0 +1,5 @@
+<%= @hospital.name %>
+<%= @hospital.doctor_count %>
+<% @hospital.universities_distinct.each do |university| %>
+  <%= university %>
+<% end %>

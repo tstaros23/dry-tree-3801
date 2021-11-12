@@ -6,7 +6,6 @@ class Hospital < ApplicationRecord
   end
 
   def universities_distinct
-    doctors.select(:university).distinct
-    require pry; binding.pry
+    doctors.distinct.pluck(:university)
   end
 end

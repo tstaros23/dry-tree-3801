@@ -9,7 +9,7 @@ require 'rails_helper'
 # And I see a unique list of universities that this hospital's doctors attended
 # ```
 RSpec.describe 'Show page' do
-  xit "shows the hospital's name, number of doctors that work at the hospital and a unique list of universities that the doctor's attended" do
+  it "shows the hospital's name, number of doctors that work at the hospital and a unique list of universities that the doctor's attended" do
 
     hospital = Hospital.create!(name:'Hells Pass')
     doctor = Doctor.create!(name: 'Ted', specialty: 'Hambones', university: 'Mizzou', hospital_id: hospital.id)
