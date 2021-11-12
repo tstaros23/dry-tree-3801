@@ -1,6 +1,6 @@
 # Seattle Grace
 
-This repository requires and has been tested on Ruby v2.7.2 and is based on Rails 5.2.5
+This repository requires and has been tested on Ruby v2.7.2 and is based on Rails 5.2.6
 
 RSpec and Shoulda-Matchers have been installed and set up.
 
@@ -11,6 +11,7 @@ RSpec and Shoulda-Matchers have been installed and set up.
 3. `git clone <paste_repo>`
 4. `cd b2-mid-mod`
 5. `bundle install`
+6. `rails db:{drop,create,migrate}`
 
 ## Instructions
 
