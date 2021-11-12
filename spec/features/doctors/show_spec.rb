@@ -1,16 +1,5 @@
 require 'rails_helper'
 
-'User Story 1, Doctors Show Page
-​
-As a visitor
-When I visit a doctors show page
-I see all of that doctors information including:
- - name
- - specialty
- - university where they got their doctorate
-And I see the name of the hospital where this doctor works
-And I see the names of all of the patients this doctor has'
-
 RSpec.describe 'show page' do
   it "shows the doctor's attributes, patient's names, and hosptital they work for" do
     hospital = Hospital.create!(name:'Hells Pass')
